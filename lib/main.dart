@@ -55,7 +55,8 @@ class Dock<T> extends StatefulWidget {
 }
 
 class _DockState<T> extends State<Dock<T>> {
-  late List<T> _items = widget.items.toList();
+  late final List<T> _items = widget.items.toList();
+  // ignore: unused_field
   int? _draggingIndex;
 
   void _onReorder(int oldIndex, int newIndex) {
